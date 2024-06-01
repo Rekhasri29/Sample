@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite">
+	<groups>
+		<define name ="all">
+			<include name ="smoke"/>
+			<include name ="sanity"/>
+			<include name ="reg"/>
+		</define>
+		<run>
+			<include name="reg"/>
+		</run>
+	</groups>
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.testng.TestGroup1"/>
+      <class name="com.testng.TestGroup2"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
